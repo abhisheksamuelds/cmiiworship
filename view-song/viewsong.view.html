@@ -1,0 +1,28 @@
+<section>
+    <dt-hamburger-menu>
+      <ul class="menu-list">
+        <li class="menu-item" ng-click="go('/mainmenu')">Main Menu</li>
+        <li class="menu-item" ng-click="go('/browsesetlists')">Browse Setlists</li>
+        <li class="menu-item" ng-click="go('/browsesongs')">Browse Songs</li>
+        <li class="menu-item" ng-click="go('/login')">Logout</li>
+      </ul>
+      <dt-hamburger-menu>
+</section>
+<article class="card" style="border-style: solid; border-width:thin; border-color: #FFFFFF;">
+              <p>
+        <button type="button" class="btn btn-default btn-sm" ng-click="go('/browsesongs')">
+          <span class="glyphicon glyphicon-chevron-left"></span> Back
+        </button>
+      </p>
+    <section>
+
+    <h3 class="text-center">{{vm.songName}} - {{vm.songArtist}}</h3>
+<div>
+  <pre id="song" data-key="{{vm.songScale}}">
+    {{vm.songChords}}
+  </pre>
+        &nbsp;
+         
+</div>
+</section>
+</article>

@@ -1,0 +1,23 @@
+<section>
+    <dt-hamburger-menu>
+      <ul class="menu-list">
+        <li class="menu-item" ng-click="go('/mainmenu')">Main Menu</li>
+        <li class="menu-item" ng-click="go('/browsesetlists')">Browse Setlists</li>
+        <li class="menu-item" ng-click="go('/browsesongs')">Browse Songs</li>
+        <li class="menu-item" ng-click="go('/login')">Logout</li>
+      </ul>
+      <dt-hamburger-menu>
+</section>
+<article class="card" style="border-style: solid; border-width:thin; border-color: #FFFFFF;">
+    <section>
+    <h3 class="text-center">Worship Songs</h3>
+<div>
+        <div class="form-actions text-center wrap" ng-repeat="song in vm.songs">
+            <button ng-click="go('/viewsong/'+song+'-'+vm.artist[$index])" style="width:50%" class="btn btn-primary">{{song}} - {{vm.artist[$index]}}</button>
+            <img ng-if="vm.dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+        </div>
+        &nbsp;
+         
+</div>
+</section>
+</article>		

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>City Missions Indian Internationl Church - Worship Center</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link href="app-content/app.css" rel="stylesheet" /> 
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+           <!-- <div class="col-sm-8 col-sm-offset-2"> -->
+           <div>
+                <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+    <div class="credits text-center">
+        <p>City Missions Indian International Church
+            <!--<a href="http://jasonwatmore.com/post/2015/03/10/angularjs-user-registration-and-login-example-tutorial"></a> -->
+        </p>
+        <p>
+            <a href="mailto:abhisheksamuel@gmail.com">Contact Administrator</a>
+        </p>
+    </div> 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular-route.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular-cookies.min.js"></script>
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/node_modules/dt-hamburger-menu/src/hamburger-menu.css"/>
+    <script src="/node_modules/dt-hamburger-menu/src/hamburger-menu.js"></script>
+
+    <script src="app.js"></script>
+    <script src="app-services/authentication.service.js"></script>
+    <script src="app-services/flash.service.js"></script>
+
+    <!-- Real user service that uses an api -->
+    <!-- <script src="app-services/user.service.js"></script> -->
+
+    <!-- Fake user service for demo that uses local storage -->
+    <script src="app-services/user.service.local-storage.js"></script>
+    
+    <script src="app-services/google.spreadsheet.service.js"></script>
+    <link rel="stylesheet" type="text/css" href="app-content/jquery.transposer.css" />
+    <script src="app-services/jquery.transposer.js"></script>
+
+    <script src="home/home.controller.js"></script>
+    <script src="login/login.controller.js"></script>
+    <script src="register/register.controller.js"></script>
+    <script src="main-menu/mainmenu.controller.js"></script>
+    <script src="browse-setlists/browsesetlists.controller.js"></script>
+    <script src="browse-songs/browsesongs.controller.js"></script>
+    <script src="view-song/viewsong.controller.js"></script>
+</body>
+</html>
